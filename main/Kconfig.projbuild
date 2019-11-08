@@ -1,0 +1,42 @@
+menu "Config_VARIABLE"
+
+    config BLINK_GPIO
+        int "Blink GPIO number"
+        range 0 34
+        default 5
+        help
+            GPIO number (IOxx) to blink on and off.
+
+            Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+
+            GPIOs 35-39 are input-only so cannot be used as outputs.
+    config WIFI_SSID
+        string "WiFi_SSID"
+        default "CM_RD_2F_2G"
+        help
+            This WIFI_SSID
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "ilovecivicmedia"
+        help
+            This Password
+
+       config MQTT_BROKER_URL
+        string "mqtt_url"
+        default "mqtt://cloud.thingsboard.io"
+        help
+            This URL_MQTT
+
+       config MQTT_BROKER_PORT
+        int mqtt_port
+        default 1883
+        help
+            This PORT_MQTT
+
+         config MQTT_ACCESS_TOKEN
+        string "mqtt_token"
+        default "WSf3STTcN7sXnLWGUpSH"
+        help
+            This MQTT_TOKEN
+
+endmenu
