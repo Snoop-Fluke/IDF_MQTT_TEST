@@ -570,14 +570,13 @@ static void ota_task(void *pvParameters)
                                 state = STATE_APP_LOOP;
                                 break;
                         }
-
                         ESP_LOGE(TAG, "APP_LOOP state, unexpected event received: %d", actual_event);
                         state = STATE_INITIAL;
                         break;
                 }
                 default:
                 {
-                        printf("HELLO_V1.3\n");
+                        printf("HELLO_V1.4\n");
                         ESP_LOGE(TAG, "Unexpected state_debug");
                         state = STATE_INITIAL;
                         break;
@@ -590,7 +589,7 @@ static void ota_task(void *pvParameters)
 static void test_version(void *pvParameters)
 {
         while(1) {
-                printf("VERSION1.3\n");
+                printf("VERSION1.444444\n");
                 vTaskDelay(2000/portTICK_PERIOD_MS);
         }
 

@@ -11,7 +11,7 @@
 #define TAG "tb_ota"
 
 /*! Firmware version used for comparison after OTA config was received from ThingsBoard */
-#define FIRMWARE_VERSION "v1.3"
+#define FIRMWARE_VERSION "v1.4"
 
 /*! Factory partiton label */
 #define FACTORY_PARTITION_LABEL "factory"
